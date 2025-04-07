@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        h1{
+           
+            color:aqua;
+        }
+    </style>
+</head> 
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+     
+    </div>
+
+
+
+    <script setup type="module">
+        import {createApp} from'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+        createApp({
+            data(){
+                return{
+                    msg:'Hello World 南宁学院',
+                   
+
+                }
+            }
+        }).mount("#app")
+    </script>
+
+</body>
+</html>
