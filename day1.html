@@ -4,31 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
+  
+    
     <style>
         h1{
-           
             color:aqua;
+            font-size: 2em; /* Added font size */
+            text-align: center; /* Added text alignment */
         }
     </style>
 </head> 
 <body>
+
     <div id="app">
         <h1>{{msg}}</h1>
+        <h2>hello world</h2>
      
     </div>
-
-
 
     <script setup type="module">
         import {createApp} from'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
         createApp({
             data(){
                 return{
-                    msg:'Hello World 南宁学院',
-                   
-
+               msg:'hello world',
                 }
             }
         }).mount("#app")
